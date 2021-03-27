@@ -4,7 +4,7 @@ $hoverColor : rgb(236, 116, 247);
 nav {
     height : 70px;
     width : 100%;
-    background : transparent;
+    background : #222;
     padding : 0 5%;
     // position : fixed ;
     top : 0px;
@@ -13,7 +13,12 @@ nav {
     align-items : center;
     justify-content: flex-end;
     z-index : 100;
-    background : red;
+
+
+    @media (max-width : 500px) {
+        height : 50px
+    }
+   
 
     @media (max-width: 600px) {
         justify-content: center;
@@ -27,8 +32,7 @@ nav {
     height : 100%;
     align-items : center;
     list-style: none;
-    background : yellow;
-
+    
     h1 {
         font-size : 3rem;
         color : #fff;
